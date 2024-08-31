@@ -1,25 +1,16 @@
-## *Домашнее задание №11 "join_server"* 
 
-### Запуск программы
+### Запуск 
 ```
 join_server <port>
-,где
-    port – номер tcp порта для входящих соединений
+
 ```
 ### Команды
 ```
-INSERT <table> <id> <name>  - Вставка данных в таблицу
-TRUNCATE <table>            - Удаление данных из таблицы
-INTERSECTION                - Получение пересечения данных из талиц
-SYMMETRIC_DIFFERENCE        - Получение симметрической разности данных из таблиц
-SELECT <table>              - Получение данных из теблицы
-,где
-    table - название таблицы ("A" или "B")
-    id    - идентификатор данных
-    name  - название данных
+INSERT <table> <id> <name>  - Вставка 
+TRUNCATE <table>            - Удаление 
+INTERSECTION                - Получение пересечения данных
+SYMMETRIC_DIFFERENCE        - Получение симметрической разности данных
+SELECT <table>              - Получение данных
+
     
-Примеры:
-    INSERT A 0 lean
-    TRUNCATE B
-    SELECT A
 ```
