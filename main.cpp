@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2023
  * 
  */
-
+//01
 #include <iostream>
 #include <boost/asio/io_service.hpp>
 #include <boost/asio/ip/tcp.hpp>
@@ -18,14 +18,6 @@
 #include "storage.h"
 #include "poolthreads.h"
 
-//-----------------------------------------------------------
-/**
- * @brief Функция ожидания подключения и создания нового соединения
- * 
- * @param acceptor          Объект ожидающий подключение клиентов
- * @param countConnections  Текущее количество соединений с клиентами
- * @param servStor          Хранилище данных
- */
 void server(tcp::acceptor &acceptor, int& countConnections, std::shared_ptr<ServiceStorage> servStor) 
 {
     acceptor.async_accept(
@@ -34,7 +26,7 @@ void server(tcp::acceptor &acceptor, int& countConnections, std::shared_ptr<Serv
             if (!err) {
                 ++countConnections;
 
-                // ожидание завершения соединения
+               
                 socket.async_wait(tcp::socket::wait_error, 
                     [&countConnections](const boost::system::error_code& /*error*/) {
                         --countConnections;
